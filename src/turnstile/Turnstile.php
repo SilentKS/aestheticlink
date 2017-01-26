@@ -63,6 +63,7 @@ class Turnstile
             if($this->isAlarm){
                 $this->isAlarm = false;
             }
+            $this->isLock = false;
             $this->stateObserver->updateState();
         }
     }
